@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    height: 100vh;
+
+    background-color: hsl(185, 75%, 39%);
+
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position: left -500px top -500px, right -500px bottom -500px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+#card {
+    margin: 150px auto;
+    width: 300px;
+}
+
+#top {
+    border-radius: 10px 10px 0 0;
+    height: 120px;
+    background-image: url("images/bg-pattern-card.svg");
+}
+
+#content-card {
+    position: relative;
+    height: 180px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    height: 250px;
+}
+
+#profile img {
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 100%;
+    margin: -50px 100px 0 100px;
+}
+
+#information {
+    padding-top: 80px;
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    line-height: 30px;
+}
+
+#information span {
+    font-weight: bold;
+}
+
+#country {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#data-followers{
+    border-top: 1px solid rgba(14, 13, 13, 0.1);
+}
+
+.followers {
+    float: left;
+    justify-content: space-between;
+}
+
+.number {
+    padding: 30px 30px 8px 30px;
+    display: block;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
