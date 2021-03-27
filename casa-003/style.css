@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white url('https://images-americanas.b2w.io/produtos/01/00/oferta/26489/3/26489397_1GG.jpg');
+    
+    font-family: 'Pirata One', cursive;
+}
+
+.card {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px #000;
+    margin: 5px 50px;
+}
+
+img {
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.conteudo {
+    padding: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.8);
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+li {
+    margin-left: 20px;
+}
+
+#links ul {
+    list-style-type: none;
+}
+
+
+.esquerda {
+    float: left;
+    background: rgb(221, 201, 17);
+}
+
+.direita {
+    background: white;
+    float: right;
+}
+
+
+
