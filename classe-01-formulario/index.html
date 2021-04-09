@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formulario">
+
+        <form action="" method="POST">
+
+            <fieldset>
+                <h1>Formulário</h1>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <br>
+                
+                <label for="senha">Senha:</label>
+                <input type="password">
+
+                <br>
+
+                <label for="senha">Confirmação de senha:</label>
+                <input type="password">
+
+                <br>
+                <span>Sintomas</span>
+                <br>
+
+                <label for="check">Febre</label>
+                <input type="checkbox" name="" id="check">
+
+                <label for="chek1">Tosse seca</label>
+                <input type="checkbox" name="" id="check1">
+
+                <label for="check2">Cansaço</label>
+                <input type="checkbox" name="" id="chekc2">
+                
+                <br>
+                
+                <span>Possui plano de saúde?</span>
+                <br>
+
+                <label for="radio-yes">Sim</label>
+                <input type="radio" id="radio-yes" name="radio-yes-or-no">
+
+                <label for="radio-no">Não</label>
+                <input type="radio" id="radio-no" name="radio-yes-or-no">
+
+                <br>
+
+                <label for="date">Data de descoberta dos sintomas</label>
+                <input type="date" id="date">
+
+                <br>
+            
+                <label for="state">UF</label>
+                <select name="uf" id="state">
+                    <optgroup>
+                        <option value="AC">AC</option>
+                        <option value="BA">BA</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </optgroup>
+                </select>
+
+                <br>
+                <br>
+                <label for="observacao">Observação</label> <br>
+                <textarea name="" id="observacao" cols="50" rows="5"></textarea>
+
+                
+            </fieldset>
+
+            <button>Enviar</button>     
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background: hsl(205, 40%, 50%);
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin: 50px auto;
+    border-radius: 20px;
+    background: white;
+    height: 75vh;
+}
+
+fieldset {
+  border: none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.4);
+}
+
+input {
+    margin: 10px;
+}
+
+span, label {
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    width: 90%;
+    padding: 12px;
+    border-radius: 5px;
+    background: hsl(205, 40%, 50%);
+    color: white;
+    margin-left: 20px;
+}
+
+button:hover {
+    background: hsl(205, 50%, 20%);
+}
