@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #e2e2e2;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+#card {
+    background-color: #eeeeee;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: minmax(300px, 1fr);
+    width: 730px;
+}
+
+img:first-child {
+    width: 285px;
+    height: 299px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 32px 40px 32px -2px;
+}
+
+#content h3, #rodape h5 {
+    color: hsl(217, 19%, 35%);
+}
+
+#content h3 {
+    margin-bottom: 10px;
+}
+
+#content p {
+    color: hsl(212, 23%, 69%);
+}
+
+#rodape {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-left: auto;
+    margin-top: 12px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 40%;
+}
+
+button:hover {
+    background-color: hsl(212, 23%, 69%);
+}
+
+
+
+#content-rodape {
+    padding: 5px;
+}
+
+#rodape img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
