@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "cabecalho cabecalho cabecalho"
+                       "menu conteudo anuncios"
+                       ". conteudo ."
+                       "rodape rodape rodape";
+  min-height: 100vh;
+  grid-template-rows: 60px 1fr 100px 60px;
+  column-gap: 30px;
+}
+
+header,
+main,
+aside,
+footer {
+  display: grid;
+  place-content: center;
+  font-family: monospace;
+  font-size: 22px;
+}
+
+header {
+  box-shadow: 0px 2px 10px black;
+  z-index: 1;
+  grid-area: cabecalho;
+}
+
+main {
+  background-color: palevioletred;
+  color: #FFF;
+  grid-area: conteudo;
+}
+
+.menu,
+.ads {
+  background: cornflowerblue;
+  color: #FFF;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.ads {
+  grid-area: anuncios;
+}
+
+footer {
+  background: #343450;
+  color: #FFF;
+  grid-area: rodape;
+}
+
