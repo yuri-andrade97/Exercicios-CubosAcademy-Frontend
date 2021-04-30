@@ -307,6 +307,7 @@ textarea {
 .button2 {
     width: 100%;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .button2 button {
