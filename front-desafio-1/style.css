@@ -31,7 +31,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     min-height: 70px;
-    width: 1060px;
+    width: 1160px;
 }
 
 .navegacao ul {
@@ -58,8 +58,9 @@ main {
 }
 
 .wrapper {
-    max-width: 1060px;
+    max-width: 1160px;
     display: flex;
+    align-items: flex-start;
 }
 
 .conteudo-principal {
@@ -137,20 +138,20 @@ button a:hover {
 
 /* Barra lateral*/
 aside {
-    width: 380px;
-    height: 1396px;
+    max-width: 380px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 24px;
 }
 
 aside input {
     all: unset;
-    width: 340px;
-    height: 52px;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.04);
     border-radius: 8px;
-    margin: 20px 20px 4px 20px;
+    margin-bottom: 16px;
     padding: 10px;
 }
 
@@ -161,14 +162,11 @@ input:hover, input:focus {
 .categoria {
     display: flex;
     flex-direction: column;
-    width: 360px;
-    margin: 0 10px 0 11px;
+    width: 100%;
+    /* margin: 0 10px 0 11px; */
     
 }
 
-.categoria ul li {
-    color: #545454;
-}
 
 .borda-left {
     border-left: 2px solid #FE0078;
@@ -187,10 +185,12 @@ input:hover, input:focus {
 }
 
 .categoria ul li {
-    width: 340px;
+    width: 100%;
     padding: 25px 5px;
     list-style: none;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #545454;
 }
 
 .categoria ul li a {
@@ -200,22 +200,25 @@ input:hover, input:focus {
     color: #545454;
 }
 
-.categoria ul li a:hover {
-    color: #FE0078;
+.categoria ul li:hover {
     border-color: #FE0078;
 }
 
+.categoria ul li a:hover {
+    color: #FE0078;
+}
+
 .anuncio {
+    width: 100%;
     height: 757px;
-    margin: 0 10px 0 11px;
     display: flex;
     flex-direction: column;
 }
 
 .publicidades {
     background-color: #EEEEEE;
-    margin: 32px 20px;
-    width: 340px;
+    margin: 32px 0;
+    width: 100%;
     height: 240px;
     display: flex;
     justify-content: center;
@@ -302,25 +305,92 @@ textarea {
 }
 
 .button2 {
+    width: 100%;
+    display: flex;
+}
+
+.button2 button {
     all: unset;
     background-color: #FE0078;
     border: 1px solid #FE0078;
     border-radius: 50px;
-    padding: 10px;
-    text-align: center; 
     cursor: pointer;
     
-    margin-left: 650px;
-}
+    margin-left: auto;
 
-.button2 button {
-    width: 50px;
-    display: inline-block;
+    padding: 12px 24px;
     margin-top: 44px;
     color: white;
     font-weight: bold;
 }
 
 
+/* PAGINA CONTATO */
 
+.form-contato {
+    margin-top: 86px;
+}
 
+.form-contato h3 {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 16px;
+}
+
+.corDeFundo2 {
+    background-color: #FFFFFF;
+    padding: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    height: min-content;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contato h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.informacao-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacao-contato h4 {
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detalhes img {
+    margin-right: 8px;
+}
+
+.detalhes span {
+    font-weight: bold;
+}
+
+.maisDetalhes {
+    margin-left: 1px;
+}
