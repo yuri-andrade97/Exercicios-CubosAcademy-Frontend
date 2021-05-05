@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vw;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                width: max-content;
+                height: max-content;
+            }
+            
+            button:hover {
+                background-color: aqua;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="div">
+            <img>
+            <button type="button" onclick="mostrarImagem()">Quero uma foto aleatória</button>
+        </div>
+        
+    </body>
+
+    <script>
+        const img = document.querySelector('img')
+        const URLbase = "https://picsum.photos/id/";
+        
+        function mostrarImagem() {
+            const idGerado = Math.ceil(Math.random() * 100);
+            img.src = URLbase + idGerado + "/200/300";
+        }
+
+    </script>
+</html>

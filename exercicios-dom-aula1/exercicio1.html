@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Olá, eu me chamo <span class="nome"></span>, prazer em conhecê-lo!</h1>
+        <p>Eu tenho <span class="idade"></span> anos e moro em <span class="cidade"></span>/<span class="estado"></span> e no meu tempo livre gosto de fazer <span class="hobbie"></span></p>
+    </body>
+
+    <script>
+
+            const nome = document.querySelector('.nome'); 
+            const idade = document.querySelector('.idade');
+            const cidade = document.querySelector('.cidade');
+            const estado = document.querySelector('.estado');
+            const hobbie = document.querySelector('.hobbie')
+
+            nome.innerText = prompt('Qual o seu nome?');
+            idade.innerText = prompt('QUal a sua idade?');
+            cidade.innerText = prompt('Em qual cidade você mora?');
+            estado.innerText = prompt('Em qual estado você mora?');
+            hobbie.innerText = prompt('Em seu tempo livre, oque gosta de fazer ?');
+    </script>
+
+</html>
